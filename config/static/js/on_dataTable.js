@@ -1,4 +1,4 @@
-const socket = io.connect("GohanSaiyan.pythonanywhere.com"); // Asegúrate de reemplazar 'http://localhost:5000' con la URL de tu servidor
+const socket = io.connect("https://gohansaiyan.pythonanywhere.com/"); // Asegúrate de reemplazar 'http://localhost:5000' con la URL de tu servidor
 
 socket.on("new_dataTable", function (object) {
   // Este bloque de código se ejecutará automáticamente cada vez que el servidor emita un evento 'new_dataTable'
