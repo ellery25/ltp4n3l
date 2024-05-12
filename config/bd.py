@@ -6,7 +6,11 @@ from flask_cors import CORS
 
 app = Flask(__name__, template_folder='./templates')
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root@localhost/ltPanel'
+user = "GohanSaiyan"
+password = "SuperSaiyan123"
+direc = "GohanSaiyan.mysql.pythonanywhere-services.com"
+namebd = "GohanSaiyan$ltpanel"
+app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://{user}:{password}@{direc}/{namebd}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 app.secret_key = 'ltPanel'
