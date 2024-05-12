@@ -1,0 +1,30 @@
+{% extends "layout.html" %} {% block title %} Login {% endblock %} {% block content %}
+
+<html data-bs-theme="dark">
+
+<div class="d-flex justify-content-center align-items-center " style="height: 100vh;">
+  <div class="login-box">
+    <p>Login</p>
+      <form action="/users/login" method="POST">
+        <div class="user-box">
+          <input name="username" type="text" required>
+          <label>Username</label>
+        </div>
+        <div class="user-box">
+          <input name="password" type="password" required>
+          <label>Password</label>
+        </div>
+        <a onclick="document.querySelector('form').submit();">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </form>
+    </div>
+  </div>
+
+</html>
+
+{% endblock %}
